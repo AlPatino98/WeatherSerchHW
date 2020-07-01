@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Tracker</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">World Weather</h1>
+      <p class="lead">Prepare for your next adventure with ease.</p>
+    </div>
+  </div>
+  <div class = "Main-body">
+    <div class="row">
+<!-- This side will contain the Search bar -->
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-header">
+            <strong>
+              <i class="fa fa-list-alt"></i> Search</strong>
+          </div>
+          <div class="card-body">
+             <!-- Here we create an HTML Form for handling the inputs-->
+             <form role="form">
+              <!-- Here we create the text box for capturing the search term-->
+              <div class="form-group">
+                <label for="search">City,State:</label>
+                <input type="text" class="form-control" id="search-term">
+              </div>
+               <!-- Here we have our final submit button -->
+               <button type="submit" class="btn btn-default" id="run-search">
+                <i class="fa fa-search"></i> Search</button>
+              <button class="btn btn-default" id="clear-all">
+                <i class="fa fa-trash"></i> Clear Results</button>
+            </form>
+          </div>
+        </div>
+      </div>
+<!-- This side is for the retrieved data -->
+      <div class ="col-md-9" id="results-container">
+        <div class = "card">
+          <div class = "card-header">
+            <strong>
+              <i class="fa fa-list-alt"></i> Results</strong>
+              <div class="card-body" id ="weatherResults ">
+
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <script type="text/javascript" src="logic.js"></script>
+</body>
+</html>
