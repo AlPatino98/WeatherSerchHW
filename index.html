@@ -11,7 +11,7 @@
 <body>
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-4">World wide Weather</h1>
+      <h1 class="display-4">World Weather</h1>
       <p class="lead">Prepare for your next adventure with ease.</p>
     </div>
   </div>
@@ -29,7 +29,7 @@
              <form role="form">
               <!-- Here we create the text box for capturing the search term-->
               <div class="form-group">
-                <label for="search">City,State:</label>
+                <label for="search">City:</label>
                 <input type="text" class="form-control" id="search-term">
               </div>
                <!-- Here we have our final submit button -->
@@ -38,6 +38,9 @@
               <button class="btn btn-default" id="clear-all">
                 <i class="fa fa-trash"></i> Clear Results</button>
             </form>
+            <ul id="previous-term">
+
+            </ul>
           </div>
         </div>
       </div>
