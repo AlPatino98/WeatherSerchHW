@@ -1,3 +1,8 @@
 #results-container{
     float: right;
   }
+
+.Main-body{
+  background-color: crimson;
+  color: blueviolet;
+}
